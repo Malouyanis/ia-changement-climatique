@@ -1,0 +1,32 @@
+# Données lourdes (à retélécharger avec les notebooks)
+*.tif
+*.tiff
+*.npy
+*.npz
+*.zarr/
+*.nc
+data/
+donnees/
+archive_mode_test/
+
+# Poids des modèles
+*.pt
+*.pth
+*.ckpt
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Rapport et brouillons (rendus à part)
+Claude outputs/
+rapport_latex/
+*.zip
+*.docx
+rapport.pdf
+log_*.txt

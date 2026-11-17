@@ -1,0 +1,340 @@
+{
+  "essai": "unet_sans_poids",
+  "hyperparametres": {
+    "poids_classes": false,
+    "annees": "2021+2022",
+    "base": 32,
+    "batch": 16,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "epoques_max": 150,
+    "patience": 25,
+    "augmentation": true
+  },
+  "poids_utilises": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "n_parametres": 7764070,
+  "meilleure_epoque": 117,
+  "miou_val": 0.8032982839545033,
+  "duree_min": 19.1,
+  "test": {
+    "exactitude": 0.8913978734815455,
+    "miou": 0.7932589527900684,
+    "par_classe": [
+      {
+        "classe": "Forêt",
+        "pixels_test": 7229571,
+        "IoU": 0.877,
+        "F1": 0.935,
+        "précision": 0.93,
+        "rappel": 0.94
+      },
+      {
+        "classe": "Végétation basse",
+        "pixels_test": 2792040,
+        "IoU": 0.618,
+        "F1": 0.764,
+        "précision": 0.756,
+        "rappel": 0.773
+      },
+      {
+        "classe": "Cultures",
+        "pixels_test": 1471086,
+        "IoU": 0.751,
+        "F1": 0.858,
+        "précision": 0.893,
+        "rappel": 0.825
+      },
+      {
+        "classe": "Bâti",
+        "pixels_test": 384133,
+        "IoU": 0.643,
+        "F1": 0.783,
+        "précision": 0.747,
+        "rappel": 0.822
+      },
+      {
+        "classe": "Sol nu / brûlé",
+        "pixels_test": 631470,
+        "IoU": 0.939,
+        "F1": 0.969,
+        "précision": 0.968,
+        "rappel": 0.969
+      },
+      {
+        "classe": "Eau / zones humides",
+        "pixels_test": 1235197,
+        "IoU": 0.931,
+        "F1": 0.964,
+        "précision": 0.992,
+        "rappel": 0.938
+      }
+    ]
+  },
+  "test_par_annee": {
+    "2021": {
+      "exactitude": 0.894119174225653,
+      "miou": 0.6838158949042494,
+      "par_classe": [
+        {
+          "classe": "Forêt",
+          "pixels_test": 3873169,
+          "IoU": 0.887,
+          "F1": 0.94,
+          "précision": 0.935,
+          "rappel": 0.945
+        },
+        {
+          "classe": "Végétation basse",
+          "pixels_test": 1464453,
+          "IoU": 0.639,
+          "F1": 0.779,
+          "précision": 0.769,
+          "rappel": 0.79
+        },
+        {
+          "classe": "Cultures",
+          "pixels_test": 737471,
+          "IoU": 0.76,
+          "F1": 0.864,
+          "précision": 0.902,
+          "rappel": 0.828
+        },
+        {
+          "classe": "Bâti",
+          "pixels_test": 185446,
+          "IoU": 0.653,
+          "F1": 0.79,
+          "précision": 0.771,
+          "rappel": 0.811
+        },
+        {
+          "classe": "Sol nu / brûlé",
+          "pixels_test": 6663,
+          "IoU": 0.237,
+          "F1": 0.383,
+          "précision": 0.503,
+          "rappel": 0.31
+        },
+        {
+          "classe": "Eau / zones humides",
+          "pixels_test": 542794,
+          "IoU": 0.927,
+          "F1": 0.962,
+          "précision": 0.993,
+          "rappel": 0.933
+        }
+      ],
+      "matrice_confusion": [
+        [
+          3661548,
+          193352,
+          7873,
+          9694,
+          5,
+          697
+        ],
+        [
+          220068,
+          1157605,
+          52631,
+          31484,
+          791,
+          1874
+        ],
+        [
+          5509,
+          119669,
+          610815,
+          1140,
+          336,
+          2
+        ],
+        [
+          11913,
+          20788,
+          1839,
+          150327,
+          138,
+          441
+        ],
+        [
+          2,
+          535,
+          2218,
+          1333,
+          2063,
+          512
+        ],
+        [
+          18718,
+          14057,
+          1623,
+          1038,
+          768,
+          506590
+        ]
+      ]
+    },
+    "2022": {
+      "exactitude": 0.888725046697188,
+      "miou": 0.7868783266628624,
+      "par_classe": [
+        {
+          "classe": "Forêt",
+          "pixels_test": 3356402,
+          "IoU": 0.867,
+          "F1": 0.929,
+          "précision": 0.924,
+          "rappel": 0.933
+        },
+        {
+          "classe": "Végétation basse",
+          "pixels_test": 1327587,
+          "IoU": 0.597,
+          "F1": 0.747,
+          "précision": 0.741,
+          "rappel": 0.753
+        },
+        {
+          "classe": "Cultures",
+          "pixels_test": 733615,
+          "IoU": 0.741,
+          "F1": 0.851,
+          "précision": 0.884,
+          "rappel": 0.821
+        },
+        {
+          "classe": "Bâti",
+          "pixels_test": 198687,
+          "IoU": 0.634,
+          "F1": 0.776,
+          "précision": 0.727,
+          "rappel": 0.833
+        },
+        {
+          "classe": "Sol nu / brûlé",
+          "pixels_test": 624807,
+          "IoU": 0.949,
+          "F1": 0.974,
+          "précision": 0.971,
+          "rappel": 0.976
+        },
+        {
+          "classe": "Eau / zones humides",
+          "pixels_test": 692403,
+          "IoU": 0.934,
+          "F1": 0.966,
+          "précision": 0.991,
+          "rappel": 0.942
+        }
+      ],
+      "matrice_confusion": [
+        [
+          3132148,
+          190413,
+          8127,
+          13361,
+          11088,
+          1265
+        ],
+        [
+          214172,
+          1000052,
+          63983,
+          43260,
+          3091,
+          3029
+        ],
+        [
+          5423,
+          121897,
+          602463,
+          2174,
+          1486,
+          172
+        ],
+        [
+          12413,
+          17228,
+          2328,
+          165412,
+          909,
+          397
+        ],
+        [
+          5939,
+          3543,
+          2373,
+          2028,
+          609854,
+          1070
+        ],
+        [
+          19622,
+          15666,
+          2327,
+          1189,
+          1552,
+          652047
+        ]
+      ]
+    }
+  },
+  "matrice_confusion_test": [
+    [
+      6793696,
+      383765,
+      16000,
+      23055,
+      11093,
+      1962
+    ],
+    [
+      434240,
+      2157657,
+      116614,
+      74744,
+      3882,
+      4903
+    ],
+    [
+      10932,
+      241566,
+      1213278,
+      3314,
+      1822,
+      174
+    ],
+    [
+      24326,
+      38016,
+      4167,
+      315739,
+      1047,
+      838
+    ],
+    [
+      5941,
+      4078,
+      4591,
+      3361,
+      611917,
+      1582
+    ],
+    [
+      38340,
+      29723,
+      3950,
+      2227,
+      2320,
+      1158637
+    ]
+  ]
+}
